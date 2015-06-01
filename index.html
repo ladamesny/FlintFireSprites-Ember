@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/libs/ember-data.js"></script>
     <script type="text/javascript" src="js/application.js"></script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title></title>
   </head>
 
@@ -14,9 +15,23 @@
   <!-- In order for Ember to know which part of the page is dynamic, we need to wrap that
     part within handle bars script tags -->
     <script type="text/x-handlebars">
-      <div class="navbar"></div>
-      <div class="container"></div>
-      <footer class="container"></footer>
+      <div class="navbar navbar-default">
+        <div class="container">
+          <a href="#" class="navbar-brand"><img src='images/logo.png' alt='logo' height='34' width='224' /></a>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='active' href='#/'><a> Home</a></li>
+            <li><a href='#/about'>About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Welcome to The Flint &amp; Flame!</h1>
+      </div>
+      <footer class="container">
+      <hr />
+      <p class='pull-left'>&copy; 2013 The Fline &amp; Flame</p>
+      <p class="pull-right"><a href='#/credits'>Credits</a></p>
+      </footer>
     </script>
   </body>
 </html>
