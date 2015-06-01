@@ -11,8 +11,12 @@
   </head>
 
   <body>
-    <div class="navbar"></div>
-    <div class="container"></div>
-    <footer class="container"></footer>
+  <!-- In order for Ember to know which part of the page is dynamic, we need to wrap that
+    part within handle bars script tags -->
+    <script type="text/x-handlebars">
+      <div class="navbar"></div>
+      <div class="container"></div>
+      <footer class="container"></footer>
+    </script>
   </body>
 </html>
